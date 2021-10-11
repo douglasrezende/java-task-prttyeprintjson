@@ -1,0 +1,13 @@
+import org.apache.commons.json.JSONObject;
+import com.sterlingcommerce.woodstock.workflow.Document;
+import org.apache.commons.io.IOUtils;
+String jsonString = "";
+Document document = new Document();     
+Document srcDoc = wfc.getPrimaryDocument();
+jsonString = IOUtils.toString(srcDoc.getInputStream());
+JSONObject json = new JSONObject(jsonString);
+document.setBody(json.toString(4).getBytes());
+wfc.setAdvancedStatus("Finish!");
+wfc.setBasicStatus(000);
+wfc.putPrimaryDocument(document);
+return "000";
