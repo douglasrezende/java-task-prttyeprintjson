@@ -1,2 +1,3 @@
-# java-task-prttyeprintjson
+# java-task-prettyprintjson
+# IBM Sterling B2B Integrator
 JAVA TASK IN STERLING B2B INTEGRATOR TO READ PRIMARY DOCUMENT EXECUTE PRETTY PRINT AND PUT IN PRIMARY DOCUMENT
